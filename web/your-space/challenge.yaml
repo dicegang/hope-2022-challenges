@@ -1,0 +1,42 @@
+name: your-space
+author: kfb
+description: |-
+  a space for your thoughts
+
+  Please note that internet-bound egress is not permitted from anywhere except `app`.
+
+  Each instance will only run for two minutes! Please test locally using the provided files and have an exploit ready before starting an instance.
+
+  [Instancer](${klodd})
+provide:
+  - source.zip
+flag:
+  file: server/app/flag.txt
+
+containers:
+  app:
+    build: server
+    ports:
+      - 8000
+    egress: true
+    startupProbe:
+      httpGet:
+        path: "/"
+        port: 8000
+      initialDelaySeconds: 0
+      periodSeconds: 5
+      failureThreshold: 6
+  redis:
+    build: redis
+    ports:
+      - 6379
+
+klodd:
+  name: your-space
+  timeout: 120000
+  expose:
+    kind: http
+    pod: app
+    port: 8000
+
+# needs instancer

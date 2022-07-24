@@ -1,0 +1,21 @@
+name: secure-page
+author: BrownieInMotion
+description: |-
+  My new website uses cookies for authentication. Now nobody can get in!
+  ${link_app_0}
+
+provide:
+  - server/app.py
+  - server/server.py
+flag: hope{signatures_signatures_signatures}
+
+containers:
+  app:
+    build: server
+    ports:
+      - 3000
+
+expose:
+  app:
+    - target: 3000
+      http: secure-page

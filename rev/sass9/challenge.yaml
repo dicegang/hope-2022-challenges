@@ -1,0 +1,9 @@
+name: super anti scalper solution 9000
+author: pepsipu
+description: |-
+  these scalpers keep somehow bypass my anti bot measures! now they need to run my super good anti bot checking script in chrome to do anymore scalping!!
+
+provide:
+  - ./chall.html
+flag:
+  file: flag.txt

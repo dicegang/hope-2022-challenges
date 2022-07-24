@@ -1,0 +1,8 @@
+name: slices
+author: hgarrereyn
+description: |-
+  Have a slice
+provide:
+- slices.py
+flag:
+  file: flag.txt

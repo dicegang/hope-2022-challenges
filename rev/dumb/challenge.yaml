@@ -1,0 +1,8 @@
+name: dumb
+author: hgarrereyn
+description: |-
+  I know the flag and I can prove it...
+provide:
+- ./dumb.zip
+flag:
+  file: flag.txt

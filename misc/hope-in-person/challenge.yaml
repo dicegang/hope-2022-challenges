@@ -1,0 +1,12 @@
+name: HOPE in-person
+author: DiceGang
+description: |-
+  **Important prize information!**
+
+  You must have _at least one_ in-person participant to be eligible for prizes! If this applies to you, please stop by D'Angelo building room 311 any time before the end of the CTF. We will give you a flag to submit for this challenge, after which you will be placed in the "HOPE in-person" division. We will award prizes to the top teams in this division, and you can check your ranking by selecting this division on the scoreboard.
+
+  Please play nice and do not share this flag with non-eligible teams.
+flag: hope{its_irl}
+
+value: 1
+tiebreakEligible: false

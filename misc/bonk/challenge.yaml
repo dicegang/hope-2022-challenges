@@ -1,0 +1,26 @@
+name: bonk
+author: kmh
+description: |-
+  Can you stay out of Python jail?
+
+  `${nc_main_0}`
+provide:
+  - deploy/bonk.py
+  - deploy/Dockerfile
+flag:
+  file: deploy/flag.txt
+
+containers:
+  main:
+    build: deploy
+    replicas: 1
+    ports:
+      - 5000
+    securityContext:
+      privileged: true
+
+expose:
+  main:
+    - target: 5000
+      tcp: 31421
+      healthContent: Welcome to python

@@ -1,0 +1,19 @@
+name: inspect-me
+author: BrownieInMotion
+description: |-
+  Just your average sanity check!
+
+  ${link_app_0}
+flag: hope{client_side_cliche}
+
+containers:
+  app:
+    build: server
+    ports:
+      - 80
+
+expose:
+  app:
+    - target: 80
+      http: inspect-me
+      healthContent: background.jpg

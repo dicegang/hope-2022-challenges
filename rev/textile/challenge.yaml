@@ -1,0 +1,9 @@
+name: textile
+author: asphyxia
+description: |-
+  We've upgraded our typesetting system from punchcards, but it seems that
+  they're still [making sweaters...](https://xkcd.com/2324/)
+provide:
+  - file: mangled.tex
+    as: textile.tex
+flag: hope{/\_/\_/\-- Thanks for unraveling me! --/\_/\_/\ Hv$\;-*'^p5D%W3&}

@@ -1,0 +1,8 @@
+name: solace
+author: notdeghost
+description: |-
+  We all need to find solace in something..
+provide:
+- ./solace.so
+flag:
+  file: flag.txt

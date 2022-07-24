@@ -1,0 +1,25 @@
+name: fermat
+author: BrownieInMotion
+description: |-
+  Help us prove the zealots wrong.
+
+  `${nc_main_0}`
+provide:
+- ./bin/challenge
+flag:
+  file: bin/flag.txt
+
+containers:
+  main:
+    build: bin
+    replicas: 1
+    ports:
+      - 5000
+    securityContext:
+      privileged: true
+
+expose:
+  main:
+    - target: 5000
+      tcp: 31944
+      healthContent: welcome to the anti-flt league

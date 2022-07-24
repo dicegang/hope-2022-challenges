@@ -1,0 +1,9 @@
+name: better-llvm
+author: aplet123
+description: |-
+  All of you fools debating over x86 vs ARM don't know that CPython bytecode is the future.
+
+  Tested under the `python:3.10-slim-bullseye` Docker image.
+provide:
+- ./chall
+flag: 'hope{CPYTHON_ISjvmV2}'

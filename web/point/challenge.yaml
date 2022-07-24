@@ -1,0 +1,22 @@
+name: point
+author: Jim
+description: |-
+  what is the point?
+
+  ${link_app_0}
+provide:
+  - server/main.go
+flag:
+  file: server/flag.txt
+
+containers:
+  app:
+    build: server
+    ports:
+      - 8081
+
+expose:
+  app:
+    - target: 8081
+      http: point
+      healthContent: Hello, world

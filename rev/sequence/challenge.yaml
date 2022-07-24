@@ -1,0 +1,22 @@
+name: sequence
+author: BrownieInMotion
+description: |-
+  `${nc_main_0}`
+provide:
+- ./bin/challenge
+flag: hope{definitely_solvable_with_angr}
+
+containers:
+  main:
+    build: bin
+    replicas: 1
+    ports:
+      - 5000
+    securityContext:
+      privileged: true
+
+expose:
+  main:
+    - target: 5000
+      tcp: 31973
+      healthContent: input

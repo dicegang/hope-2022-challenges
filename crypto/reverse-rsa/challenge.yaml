@@ -1,0 +1,25 @@
+name: reverse-rsa
+author: ireland
+description: |-
+  I'll tell you my flag if you can prove you already know it!
+
+  `${nc_main_0}`
+provide:
+  - file: reverse-rsa.py
+flag:
+  file: ./flag.txt
+
+containers:
+  main:
+    build: .
+    replicas: 1
+    ports:
+      - 5000
+    securityContext:
+      privileged: true
+
+expose:
+  main:
+    - target: 5000
+      tcp: 31669
+      healthContent: Welcome to reverse RSA

@@ -1,0 +1,32 @@
+name: kfb
+author: kfb
+description: |-
+  if keys make stuff secure then why don't we use them more
+
+  `${nc_main_0}`
+provide:
+  - server/server.py
+flag:
+  file: server/flag.txt
+
+containers:
+  main:
+    build: server
+    replicas: 1
+    ports:
+      - 5000
+    securityContext:
+      privileged: true
+    resources:
+      limits:
+        cpu: 1000m
+        memory: 500Mi
+      requests:
+        cpu: 1000m
+        memory: 500Mi
+
+expose:
+  main:
+    - target: 5000
+      tcp: 31968
+      healthContent: '>'

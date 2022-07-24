@@ -1,0 +1,23 @@
+name: drive
+author: emh
+description: |-
+  `${nc_main_0}`
+provide:
+- ./drive/drive
+- ./drive/run.py
+flag:
+  file: ./drive/flag.txt
+
+containers:
+  main:
+    build: drive
+    replicas: 1
+    ports:
+      - 5000
+    securityContext:
+      privileged: true
+
+expose:
+  main:
+    - target: 5000
+      tcp: 31822

@@ -1,0 +1,26 @@
+name: queue
+author: kfb
+description: |-
+  memory safety is one of our priorities
+
+  `${nc_main_0}`
+provide:
+  - bin/queue
+  - bin/Dockerfile
+flag:
+  file: bin/flag.txt
+
+containers:
+  main:
+    build: bin
+    replicas: 1
+    ports:
+      - 5000
+    securityContext:
+      privileged: true
+
+expose:
+  main:
+    - target: 5000
+      tcp: 31283
+      healthContent: Menu

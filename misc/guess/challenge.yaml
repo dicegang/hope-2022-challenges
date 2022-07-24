@@ -1,0 +1,9 @@
+name: guess
+author: BrownieInMotion
+description: |-
+  Ah, "forensics." At least you have the source...
+provide:
+- encode.py
+- output.png
+flag:
+  file: flag.txt

@@ -1,0 +1,10 @@
+name: pem
+author: ireland
+description: |-
+  PEM stands for Prime Encryption Method, I think.
+provide:
+- ./generate.py
+- ./privatekey.pem
+- ./encrypted.bin
+flag:
+  file: ./flag.txt

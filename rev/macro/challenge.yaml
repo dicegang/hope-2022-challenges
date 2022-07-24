@@ -1,0 +1,8 @@
+name: macro
+author: hgarrereyn
+description: |-
+  I'm having trouble compiling this program...
+provide:
+- ./macro.zip
+flag:
+  file: flag.txt

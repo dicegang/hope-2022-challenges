@@ -1,0 +1,25 @@
+name: puppy
+author: kfb
+description: |-
+  I got a new puppy but all he does is eat!
+
+  `${nc_main_0}`
+provide:
+  - bin/puppy
+  - bin/Dockerfile
+flag:
+  file: bin/flag.txt
+
+containers:
+  main:
+    build: bin
+    replicas: 1
+    ports:
+      - 5000
+    securityContext:
+      privileged: true
+
+expose:
+  main:
+    - target: 5000
+      tcp: 31819

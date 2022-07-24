@@ -1,0 +1,14 @@
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+  unsigned char flag[128];
+  fputs("What's the flag? ", stdout);
+  fgets(flag, sizeof(flag), stdin);
+  flag[strcspn(flag, "\n")] = 0;
+  if ({{ conditions }}) {
+    puts("Correct!");
+  } else {
+    puts("No!");
+  }
+}

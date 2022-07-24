@@ -1,0 +1,25 @@
+name: reverser
+author: BrownieInMotion
+description: |-
+  An extremely useful tool. Hope there aren't issues with the server-side
+  templating...
+
+  ${link_app_0}
+
+  The flag is in a file with an unknown name.
+provide:
+  - server/app.py
+flag:
+  file: server/flag.txt
+
+containers:
+  app:
+    build: server
+    ports:
+      - 8000
+
+expose:
+  app:
+    - target: 8000
+      http: reverser
+      healthContent: Text Reverser

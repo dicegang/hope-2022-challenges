@@ -1,0 +1,35 @@
+name: reckless arson
+author: kmh
+description: |-
+  pytorch model loading was still dangerous, so we made it actually safe!
+
+  `${nc_main_0}`
+
+  Note: this fixes an unintended vulnerability in the `arson` challenge :)
+provide:
+  - deploy/arson.py
+  - deploy/Dockerfile
+flag:
+  file: deploy/flag.txt
+
+containers:
+  main:
+    build: deploy
+    replicas: 1
+    ports:
+      - 5000
+    securityContext:
+      privileged: true
+    resources:
+      limits:
+        cpu: 1000m
+        memory: 500Mi
+      requests:
+        cpu: 1000m
+        memory: 500Mi
+
+expose:
+  main:
+    - target: 5000
+      tcp: 31065
+      healthContent: Enter base64-encoded model

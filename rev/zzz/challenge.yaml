@@ -1,0 +1,8 @@
+name: zzz
+author: kfb
+description: |-
+  I'm too tired and this binary is too big!
+provide:
+- ./bin/zzz
+flag:
+  file: ./bin/flag.txt

@@ -1,0 +1,26 @@
+name: pastebin
+author: BrownieInMotion
+description: |-
+  Hey, another one of these!
+
+  ${link_app_0}
+
+  [Admin Bot](https://admin-bot.mc.ax/pastebin)
+provide:
+  - server/index.js
+  - server/package.json
+  - adminbot.js
+flag:
+  file: flag.txt
+
+containers:
+  app:
+    build: server
+    ports:
+      - 3000
+
+expose:
+  app:
+    - target: 3000
+      http: pastebin
+      healthContent: Yet Another Pastebin

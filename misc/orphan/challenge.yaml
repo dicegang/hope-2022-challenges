@@ -1,0 +1,8 @@
+name: orphan
+author: defund
+description: |-
+  nothing to see here
+provide:
+- ./orphan.zip
+flag:
+  file: ./flag.txt

@@ -1,0 +1,22 @@
+name: oeps
+author: BrownieInMotion
+description: |-
+  Founded in 2022 by me.
+
+  ${link_app_0}
+provide:
+  - server/app.py
+  - server/server.py
+flag: hope{ecid_gnivlovni_semordnilap_fo_kniht_ton_dluoc}
+
+containers:
+  app:
+    build: server
+    ports:
+      - 3000
+
+expose:
+  app:
+    - target: 3000
+      http: oeps
+      healthContent: The On-Line Encyclopedia of Palidromic Sentences

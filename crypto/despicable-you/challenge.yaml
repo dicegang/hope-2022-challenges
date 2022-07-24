@@ -1,0 +1,9 @@
+name: DESpicable you
+author: greenbeans
+description: |-
+  I've told my minions to brew up a new type of block cipher! (written in python 2.7)
+provide:
+- ./encrypt.py
+- ./output.txt
+flag:
+  file: ./flag.txt

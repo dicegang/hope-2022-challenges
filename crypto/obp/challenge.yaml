@@ -1,0 +1,9 @@
+name: obp
+author: BrownieInMotion
+description: |-
+  The unbreakable One Byte Pad
+provide:
+- ./encrypt.py
+- ./output.txt
+flag:
+  file: ./flag.txt

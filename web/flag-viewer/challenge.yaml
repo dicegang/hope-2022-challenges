@@ -1,0 +1,21 @@
+name: flag-viewer
+author: BrownieInMotion
+description: |-
+  ${link_app_0}
+
+provide:
+  - server/app.py
+  - server/server.py
+flag: hope{oops_client_side_validation_again}
+
+containers:
+  app:
+    build: server
+    ports:
+      - 3000
+
+expose:
+  app:
+    - target: 3000
+      http: flag-viewer
+      healthContent: The Flag Viewer

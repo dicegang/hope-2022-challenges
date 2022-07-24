@@ -1,0 +1,9 @@
+name: streamlined
+author: ireland
+description: |-
+  The "One" in "One Time Pad" means you should reuse it 5 times.
+provide:
+- ./streamlined.py
+- ./stream_output.txt
+flag:
+  file: ./flag.txt

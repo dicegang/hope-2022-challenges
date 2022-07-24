@@ -1,0 +1,9 @@
+name: small-fortune
+author: willwam
+description: |-
+  shimmering in the light
+provide:
+  - ./script.py
+  - ./output.txt
+flag:
+  file: ./flag.txt

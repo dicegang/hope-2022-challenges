@@ -1,0 +1,7 @@
+name: hive
+author: defund
+description: |-
+  Come to room 311 and beat one of our organizers at [Hive](https://www.fgbradleys.com/rules/rules3/HiveRules.pdf) for 50 points! (In-person teams only)
+flag: hope{defund_tj}
+value: 50
+tiebreakEligible: false
